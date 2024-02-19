@@ -12,7 +12,7 @@ def main():
         total += a[i]
 
     stdio.writef('Average: %0.2f\n', total / n)
-    stdio.writef('Min: %0.2f\n', min(a))
+    stdio.writef('Min: %0.f\n', min(a))
     stdio.writef('Max: %0.2f\n', max(a))
     
 
