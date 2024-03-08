@@ -1,0 +1,39 @@
+import sys, random
+
+if len(sys.argv) > 2:
+    T = int(sys.argv[1])
+    N = int(sys.argv[2])
+
+    print(f'{T} trials {N} visitors')
+    
+    p_count = 0
+
+    for trial in range(T):
+        s = 1
+        story = [0] * N
+        story[0] = 1
+        last = 0
+            
+        done = False
+        rnd = random.randint(0, N-1)
+        while not done:
+            while last == rnd:
+                rnd = random.randint(0, N-1)
+
+            if story[rnd]:
+                done = True
+            else:
+                story[rnd] += 1
+                s += 1
+                last = rnd
+        
+        average += s / N
+        if all(story):
+            p_count += 1
+
+    average /= T
+    p = p_count / T
+
+    print(f'average number of story recipients  {average}')
+    print(f'Pr(everyone hears story) {p}')
+
