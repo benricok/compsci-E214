@@ -1,0 +1,22 @@
+shoprite
+jik 3.45
+oros 2.78
+oreos 1.56
+ENDPRICES
+spar
+jik 2.56
+oreos 1.87
+ENDPRICES
+ok
+oreos 0.88
+bread 2.44
+salt 1.34
+ENDPRICES
+ENDSHOPS
+jik
+oreos
+niknaks
+salt
+bread
+ENDLIST
+ENDLIST
